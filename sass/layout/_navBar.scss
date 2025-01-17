@@ -1,0 +1,27 @@
+header {
+    height: 80px;
+    font-family: $fuente-parrafos;
+    font-size: bold;
+    nav {
+        .container-fluid {
+            background-color: $blanco;
+        }
+    }
+}
+.nav-item a:hover {
+    color: $negro;
+}
+.dropdown-menu {
+    background-color: $blanco;
+}
+.nav-link {
+    font-family: $fuente-logo;
+    font-size: 2.2rem;
+}
+.link-btn {
+    margin: 10px !important;
+}
+.dropdown-item {
+    padding-right: 25px !important;
+    padding-left: 25px !important;
+}

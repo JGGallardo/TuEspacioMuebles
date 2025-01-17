@@ -1,4 +1,19 @@
 @charset "UTF-8";
+button {
+  all: unset;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  color: var(--negro);
+  background-color: rgba(107, 104, 98, 0.6784313725);
+  transition: background-color 0.3 ease;
+}
+
+button:hover {
+  background-color: rgba(65, 63, 59, 0.6588235294);
+}
+
+/** Media Queries **/
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 1 rem = 10px */
@@ -14,9 +29,20 @@ html {
   padding: 0;
 }
 
+body {
+  background-color: #fffcf2;
+  font-family: "lora", "sans-serif";
+  line-height: 1.6;
+  font-size: 1.5rem;
+  /****/
+  display: grid;
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+}
+
 h1 {
   font-size: 2rem;
-  font-family: var(--fuente-logo);
+  font-family: "Oswald", "sans-serif";
   font-weight: bold;
 }
 
@@ -34,7 +60,7 @@ p {
 
 a {
   text-decoration: none;
-  color: var(--negro);
+  color: #000;
 }
 
 ol,
@@ -58,6 +84,69 @@ img {
   width: 95%;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.logo-imagen {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+header {
+  height: 80px;
+  font-family: "lora", "sans-serif";
+  font-size: bold;
+}
+header nav .container-fluid {
+  background-color: #fffcf2;
+}
+
+.nav-item a:hover {
+  color: #000;
+}
+
+.dropdown-menu {
+  background-color: #fffcf2;
+}
+
+.nav-link {
+  font-family: "Oswald", "sans-serif";
+  font-size: 2.2rem;
+}
+
+.link-btn {
+  margin: 10px !important;
+}
+
+.dropdown-item {
+  padding-right: 25px !important;
+  padding-left: 25px !important;
+}
+
+main .hero {
+  height: 90vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/img/habitacion_contemporanea.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fffcf2;
+}
+main .hero img {
+  width: 100%;
+  height: 200px;
+}
+main .hero div a button {
+  padding: 0.8rem 2rem;
+}
+main .hero h2 {
+  margin: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
