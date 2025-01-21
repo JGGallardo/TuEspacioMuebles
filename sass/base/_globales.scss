@@ -38,32 +38,16 @@ p {
 a {
     text-decoration: none;
     color: $negro;
-    // scroll-behavior: smooth;
 }
 ol,
 ul,
 li {
     list-style: none;
 }
-
-.icons {
-    width: 4rem;
-    height: 4rem;
-}
 img {
     max-width: 100%;
+    display: inline-block;
     height: auto;
     object-fit: cover;
-}
-.contenedor {
-    width: 95%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-//logo
-.logo-imagen {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    margin: 1rem;
+    transition-duration: 1s;
 }

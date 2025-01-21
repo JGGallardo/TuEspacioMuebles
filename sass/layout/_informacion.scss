@@ -1,0 +1,15 @@
+.informacion {
+    background-color: $gris-claro;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 30vh;
+    padding: 20px 10px;
+    margin: 20px 0;
+    text-align: center;
+}
+.informacion h3 {
+    margin: 5px;
+}

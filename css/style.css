@@ -13,6 +13,24 @@ button:hover {
   background-color: rgba(65, 63, 59, 0.6588235294);
 }
 
+.contenedor {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.icons {
+  width: 4rem;
+  height: 4rem;
+}
+
+.logo-imagen {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
 /** Media Queries **/
 html {
   box-sizing: border-box;
@@ -69,28 +87,12 @@ li {
   list-style: none;
 }
 
-.icons {
-  width: 4rem;
-  height: 4rem;
-}
-
 img {
   max-width: 100%;
+  display: inline-block;
   height: auto;
   object-fit: cover;
-}
-
-.contenedor {
-  width: 95%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.logo-imagen {
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  margin: 1rem;
+  transition-duration: 1s;
 }
 
 header {
@@ -147,6 +149,181 @@ main .hero div a button {
 }
 main .hero h2 {
   margin: 30px;
+}
+
+#productsSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#productsSection ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+  gap: 1em;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+#productsSection ul li {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  margin: 2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+#productsSection ul li a button {
+  padding: 10px 20px;
+  color: #fffcf2;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navSections__comedor {
+  background-image: url(../assets/img/Mesa_con_sillas.jpg);
+}
+
+.navSections__vajilleros {
+  background-image: url(../assets/img/Vajillero.jpg);
+}
+
+.navSections__living {
+  background-image: url(../assets/img/living_con_sillon.jpg);
+}
+
+.navSections__home-deco {
+  background-image: url(../assets/img/Home_&_deco.jpg);
+}
+
+.informacion {
+  background-color: #ccc5b9;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 30vh;
+  padding: 20px 10px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.informacion h3 {
+  margin: 5px;
+}
+
+footer {
+  text-align: center;
+  background-color: rgba(110, 107, 102, 0.7254901961);
+  padding: 20px 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__nav {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer__nav li {
+  padding: 1rem;
+}
+
+.footer__logo img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.footer__logo p {
+  font-family: "Oswald", "sans-serif";
+  font-size: 2.4rem;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.contacto h3 {
+  padding: 1rem;
+}
+
+.contacto ul a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  gap: 2rem;
+}
+
+.contacto ul a li {
+  margin: 1rem 0;
+}
+
+.seccion-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 2rem;
+  margin: 5rem;
+  width: auto;
+}
+.seccion-productos div img {
+  width: 100%;
+  height: auto;
+}
+.seccion-productos div div p,
+.seccion-productos div div button {
+  margin: 1rem 0;
+  line-height: 1.2;
+}
+.seccion-productos div div button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.about {
+  display: grid;
+  justify-content: space-around;
+  align-content: space-evenly;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+}
+.about div {
+  height: 100%;
+  margin: 2rem;
+}
+.about div img {
+  width: 100%;
+  height: 500px;
+}
+
+.titulo {
+  margin: 2.5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: "lora", "sans-serif";
+}
+
+.about__texto {
+  text-align: justify;
+  margin: 0 15px 0 10px;
+  padding: 0 15px 0 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

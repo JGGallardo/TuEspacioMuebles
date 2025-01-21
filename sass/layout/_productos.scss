@@ -1,0 +1,28 @@
+.seccion-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 2rem;
+    margin: 5rem;
+    width: auto;
+    div {
+        img {
+            width: 100%;
+            height: auto;
+        }
+        div {
+            p,
+            button {
+                margin: 1rem 0;
+                line-height: 1.2;
+            }
+            button {
+                padding: 10px 20px;
+                // margin: 0;
+                font-size: 16px;
+                font-weight: bold;
+                color: $negro;
+            }
+        }
+    }
+}
