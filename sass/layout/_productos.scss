@@ -9,6 +9,12 @@
         img {
             width: 100%;
             height: auto;
+            max-width: 500px;
+            max-height: 400px;
+            transition: transform 0.3s ease;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
         div {
             p,
@@ -18,7 +24,6 @@
             }
             button {
                 padding: 10px 20px;
-                // margin: 0;
                 font-size: 16px;
                 font-weight: bold;
                 color: $negro;

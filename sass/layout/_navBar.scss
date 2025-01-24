@@ -1,10 +1,18 @@
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 80px;
+    z-index: 1000;
+    background-color: $blanco-transparente;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
     font-family: $fuente-parrafos;
     font-size: bold;
     nav {
         .container-fluid {
-            background-color: $blanco;
+            background-color: $blanco-transparente;
         }
     }
 }
@@ -24,4 +32,7 @@ header {
 .dropdown-item {
     padding-right: 25px !important;
     padding-left: 25px !important;
+}
+body {
+    margin-top: 80px;
 }
