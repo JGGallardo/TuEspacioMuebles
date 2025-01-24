@@ -30,7 +30,7 @@ h2 {
     font-size: 2.2rem;
 }
 h3 {
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
 p {
     line-height: 2;
@@ -50,4 +50,16 @@ img {
     height: auto;
     object-fit: cover;
     transition-duration: 1s;
+}
+button {
+    all: unset;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    color: var(--negro);
+    background-color: #bdbab6ad;
+    transition: background-color 0.3 ease;
+}
+button:hover {
+    background-color: #413f3ba8;
 }

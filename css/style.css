@@ -1,30 +1,16 @@
 @charset "UTF-8";
-button {
-  all: unset;
-  cursor: pointer;
-  text-decoration: none;
-  border-radius: 5px;
-  color: var(--negro);
-  background-color: rgba(107, 104, 98, 0.6784313725);
-  transition: background-color 0.3 ease;
-}
-
-button:hover {
-  background-color: rgba(65, 63, 59, 0.6588235294);
-}
-
 .contenedor {
   width: 95%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.icons {
+.icons, footer div .contacto ul a img {
   width: 4rem;
   height: 4rem;
 }
 
-.logo-imagen {
+.logo-imagen, footer div .footer__logo a img {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
@@ -69,7 +55,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 
 p {
@@ -93,6 +79,20 @@ img {
   height: auto;
   object-fit: cover;
   transition-duration: 1s;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  color: var(--negro);
+  background-color: rgba(189, 186, 182, 0.6784313725);
+  transition: background-color 0.3 ease;
+}
+
+button:hover {
+  background-color: rgba(65, 63, 59, 0.6588235294);
 }
 
 header {
@@ -235,54 +235,44 @@ footer {
   background-color: rgba(110, 107, 102, 0.7254901961);
   padding: 20px 10px;
 }
-
-.footer {
+footer div {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-.footer__nav {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.footer__nav li {
-  padding: 1rem;
-}
-
-.footer__logo img {
+footer div .footer__logo a img {
   width: 6rem;
   height: 6rem;
 }
-
-.footer__logo p {
+footer div .footer__logo a p {
   font-family: "Oswald", "sans-serif";
   font-size: 2.4rem;
 }
-
-.contacto {
+footer div ul {
+  font-size: 20px;
+  font-weight: bold;
+}
+footer div ul li {
+  padding: 1rem;
+}
+footer div .contacto {
   display: flex;
   flex-direction: column;
   margin-right: 5rem;
 }
-
-.contacto h3 {
+footer div .contacto h3 {
   padding: 1rem;
 }
-
-.contacto ul a {
+footer div .contacto ul a {
   display: flex;
   flex-direction: row;
   align-items: center;
   align-content: center;
   gap: 2rem;
 }
-
-.contacto ul a li {
+footer div .contacto ul a li {
   margin: 1rem 0;
 }
-
 .seccion-productos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

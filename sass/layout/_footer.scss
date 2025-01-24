@@ -2,42 +2,96 @@ footer {
     text-align: center;
     background-color: $gris-oscuro;
     padding: 20px 10px;
+    div {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .footer__logo {
+            a {
+                img {
+                    @extend .logo-imagen;
+                    width: 6rem;
+                    height: 6rem;
+                }
+                p {
+                    font-family: $fuente-logo;
+                    font-size: 2.4rem;
+                }
+            }
+        }
+        ul {
+            font-size: 20px;
+            font-weight: bold;
+            li {
+                padding: 1rem;
+            }
+        }
+        .contacto {
+            display: flex;
+            flex-direction: column;
+            margin-right: 5rem;
+            h3 {
+                padding: 1rem;
+            }
+            ul {
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    align-content: center;
+                    gap: 2rem;
+                    li {
+                        margin: 1rem 0;
+                    }
+                    img {
+                        @extend .icons;
+                    }
+                }
+            }
+        }
+    }
 }
-.footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.footer__nav {
-    font-size: 20px;
-    font-weight: bold;
-}
-.footer__nav li {
-    padding: 1rem;
-}
-.footer__logo img {
-    width: 6rem;
-    height: 6rem;
-}
-.footer__logo p {
-    font-family: $fuente-logo;
-    font-size: 2.4rem;
-}
-.contacto {
-    display: flex;
-    flex-direction: column;
-    margin-right: 5rem;
-}
-.contacto h3 {
-    padding: 1rem;
-}
-.contacto ul a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    gap: 2rem;
-}
-.contacto ul a li {
-    margin: 1rem 0;
-}
+
+// footer {
+//     text-align: center;
+//     background-color: $gris-oscuro;
+//     padding: 20px 10px;
+// }
+// .footer {
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+// }
+// .footer__nav {
+//     font-size: 20px;
+//     font-weight: bold;
+// }
+// .footer__nav li {
+//     padding: 1rem;
+// }
+// .footer__logo img {
+//     width: 6rem;
+//     height: 6rem;
+// }
+// .footer__logo p {
+//     font-family: $fuente-logo;
+//     font-size: 2.4rem;
+// }
+// .contacto {
+//     display: flex;
+//     flex-direction: column;
+//     margin-right: 5rem;
+// }
+// .contacto h3 {
+//     padding: 1rem;
+// }
+// .contacto ul a {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     align-content: center;
+//     gap: 2rem;
+// }
+// .contacto ul a li {
+//     margin: 1rem 0;
+// }
