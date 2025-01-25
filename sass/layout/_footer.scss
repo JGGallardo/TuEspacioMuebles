@@ -4,7 +4,7 @@ footer {
     padding: 20px 10px;
     div {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
         .footer__logo {
             a {
@@ -23,13 +23,13 @@ footer {
             font-size: 20px;
             font-weight: bold;
             li {
-                padding: 1rem;
+                padding: 1rem 0;
             }
         }
         .contacto {
             display: flex;
             flex-direction: column;
-            margin-right: 5rem;
+            margin-right: 1rem;
             h3 {
                 padding: 1rem;
             }

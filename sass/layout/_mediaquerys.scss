@@ -1,0 +1,57 @@
+@include desktop {
+    footer {
+        div {
+            .footer__logo {
+                a {
+                    p {
+                        display: none;
+                    }
+                }
+            }
+            justify-content: space-around;
+        }
+        .about {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+@include tablet {
+    footer {
+        text-align: center;
+        padding: 1.5rem;
+        div {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            .footer__logo {
+                a {
+                    p {
+                        display: block;
+                    }
+                }
+            }
+            .contacto {
+                margin-right: 0;
+            }
+        }
+    }
+    .seccion-productos {
+        grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
+        gap: 1rem;
+        margin: 2rem;
+    }
+}
+@include telefono {
+    nav {
+        div {
+            a {
+                h1 {
+                    font-size: medium;
+                }
+            }
+        }
+    }
+    .informacion {
+        height: 70vh;
+    }
+}
