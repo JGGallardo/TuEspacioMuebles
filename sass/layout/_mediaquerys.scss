@@ -10,9 +10,6 @@
             }
             justify-content: space-around;
         }
-        .about {
-            grid-template-columns: 1fr;
-        }
     }
 }
 @include tablet {
@@ -39,6 +36,9 @@
         grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
         gap: 1rem;
         margin: 2rem;
+    }
+    .about {
+        grid-template-columns: 1fr;
     }
 }
 @include telefono {

@@ -1,8 +1,9 @@
 .seccion-productos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    @include grid(3, 2rem);
     justify-content: center;
-    gap: 2rem;
+    // display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // gap: 2rem;
     margin: 5rem;
     width: auto;
     div {

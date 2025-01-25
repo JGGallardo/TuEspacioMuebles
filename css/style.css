@@ -275,9 +275,9 @@ footer div .contacto ul a li {
 }
 .seccion-productos {
   display: grid;
+  gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  gap: 2rem;
   margin: 5rem;
   width: auto;
 }
@@ -305,11 +305,11 @@ footer div .contacto ul a li {
 
 .about {
   display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-around;
   align-content: space-evenly;
   align-items: center;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 10px;
 }
 .about div {
   height: 100%;
@@ -340,9 +340,6 @@ footer div .contacto ul a li {
   footer div .footer__logo a p {
     display: none;
   }
-  footer .about {
-    grid-template-columns: 1fr;
-  }
 }
 @media (max-width: 600px) {
   footer {
@@ -364,6 +361,9 @@ footer div .contacto ul a li {
     grid-template-columns: 1fr; /* Una columna en dispositivos móviles */
     gap: 1rem;
     margin: 2rem;
+  }
+  .about {
+    grid-template-columns: 1fr;
   }
 }
 @media (max-width: 340px) {
