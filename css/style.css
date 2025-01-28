@@ -198,19 +198,19 @@ main .hero h2 {
 }
 
 .navSections__comedor {
-  background-image: url(../assets/img/Mesa_con_sillas.jpg);
+  background-image: url(../../assets/img/Mesa_con_sillas.webp);
 }
 
 .navSections__vajilleros {
-  background-image: url(../assets/img/Vajillero.jpg);
+  background-image: url(../../assets/img/Vajillero.webp);
 }
 
 .navSections__living {
-  background-image: url(../assets/img/living_con_sillon.jpg);
+  background-image: url(../../assets/img/living_con_sillon.webp);
 }
 
 .navSections__home-deco {
-  background-image: url(../assets/img/Home_&_deco.jpg);
+  background-image: url(../../assets/img/Home_&_deco.webp);
 }
 
 .informacion {
@@ -262,6 +262,7 @@ footer div .contacto {
 }
 footer div .contacto h3 {
   padding: 1rem;
+  font-size: large;
 }
 footer div .contacto ul a {
   display: flex;
