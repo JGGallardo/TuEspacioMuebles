@@ -5,14 +5,14 @@ header {
     width: 100%;
     height: 80px;
     z-index: 1000;
-    background-color: $blanco-transparente;
+    background-color: $blanco;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
     font-family: $fuente-parrafos;
     font-size: bold;
     nav {
         .container-fluid {
-            background-color: $blanco-transparente;
+            background-color: $blanco;
         }
     }
 }
@@ -25,6 +25,7 @@ header {
 .nav-link {
     font-family: $fuente-logo;
     font-size: 2.2rem;
+    color: $marron-oscuro;
 }
 .link-btn {
     margin: 10px !important;

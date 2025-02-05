@@ -57,9 +57,9 @@ button {
     text-decoration: none;
     border-radius: 5px;
     color: var(--negro);
-    background-color: #bdbab6ad;
+    background-color: $marron-claro;
     transition: background-color 0.3 ease;
 }
 button:hover {
-    background-color: #413f3ba8;
+    background-color: $marron-oscuro-transparente;
 }
